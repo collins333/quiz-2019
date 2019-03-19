@@ -141,7 +141,7 @@ exports.check = (req, res, next) => {
     const result = answer.toLowerCase().trim() === quiz.answer.toLowerCase().trim();
 
     if (quiz) {
-        res.render('quizzes/result', {
+        res.render('quizzes/check', {
             quiz: quiz,
             result: result,
             answer: answer
