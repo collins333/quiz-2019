@@ -1,15 +1,10 @@
 <h1>
-  Result:
+  Show question:
 </h1>
 
-<p>
-  The answer <strong> <%= answer %> </strong> is <%= result ? 'Right' : 'Wrong' %>.
-</p>
-
-<p>
-  <% if (!result) { %>
-    <a href="/quizzes/<%= quiz.id %>/play?answer=<%= answer %>"> Try it again </a>
-  <% } %>
-</p>
+<ul>
+  <li>Question: <b><%= quiz.question %></b></li>
+  <li>Answer: <b><%= quiz.answer %></b></li>
+</ul>
 
 <a href="/quizzes"><button>Go back</button></a>
